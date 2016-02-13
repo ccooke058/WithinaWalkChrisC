@@ -1,0 +1,35 @@
+
+ <menu xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools" tools:context=".MapsActivity">
+        <item
+            android:id="@+id/Normal" android:title="Normal Map"
+            android:orderInCategory="100" app:showAsAction="never"/>
+        <item
+            android:id="@id/settings" android:title="Satellite Map"
+            android:orderInCategory="100" app:showAsAction="never"/>
+        <item
+            android:id="@+id/Hybrid" android:title="Hybrid Map"
+            android:orderInCategory="100" app:showAsAction="never"/>
+        <item
+            android:id="@id/map" android:title="Terrain Map"
+            android:orderInCategory="100" app:showAsAction="never"/>
+        <item
+            android:id="@+id/resetButton" android:title="Reset"
+            android:orderInCategory="100" android:icon="@drawable/mr_ic_play_dark"
+            app:showAsAction="always"/>
+        <item
+            android:id="@+id/Drive" android:title="Travel by Car"
+            android:orderInCategory="100" android:icon="@drawable/mr_ic_settings_dark"
+            app:showAsAction="never"/>
+         <item
+            android:id="@+id/Walk" android:title="Travel on Foot"
+            android:orderInCategory="100" android:icon="@drawable/mr_ic_settings_dark"
+            app:showAsAction="never"/>
+         <item
+            android:id="@+id/Distance" android:title="Distance to point"
+            android:orderInCategory="100" android:icon="@drawable/mr_ic_settings_dark"
+            app:showAsAction="never"/>
+
+
+</menu>

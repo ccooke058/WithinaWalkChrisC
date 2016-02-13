@@ -1,0 +1,36 @@
+package com.chriscooke.withinawalk;
+
+/**
+ * Created by Chris_Home on 23/11/15.
+ */
+public class AutoPlace {
+
+
+        private String id;
+        private String description;
+
+
+        public AutoPlace( String id, String description ) {
+            this.id = id;
+            this.description = description;
+
+        }
+
+        public String getDescription() {
+            return description;
+        }
+
+        public void setDescription( String description ) {
+            this.description = description;
+        }
+
+        public String getId() {
+            return id;
+        }
+
+        public void setId( String id ) {
+            this.id = id;
+        }
+    }
+
+

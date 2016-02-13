@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlacePickerActivity">
+
+    <!--including the toolbar-->
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/Welcome"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/attributions"
+        android:layout_alignEnd="@+id/attributions"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="WithinAWalk"
+        android:textSize="40dp"
+        android:textColor="#01500d"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:onClick="onPickButtonClick"
+        android:id="@+id/button"
+        android:background="@drawable/abc_ic_search_api_mtrl_alpha"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#01500d"
+        android:elegantTextHeight="false" />
+
+    <TextView
+        android:id="@+id/mTextView"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/attributions"
+        android:layout_alignEnd="@+id/attributions"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Welcome"
+        android:nestedScrollingEnabled="false"
+        android:onClick="onTextViewClick"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/attributions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/mTextView"
+        android:textSize="14dp"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Click search to view nearby places:"
+        android:id="@+id/textView2"
+
+        android:layout_alignTop="@+id/attributions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="#01500d"
+        android:textStyle="bold"
+        android:textSize="22dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/locolistView"
+
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Recent places:"
+        android:id="@+id/textView"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button"
+        android:textColor="#01500d"
+        android:textSize="16dp" />
+
+
+
+
+</RelativeLayout>

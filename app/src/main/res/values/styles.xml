@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppTheme" parent="BaseTheme"/>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item> 
+        <item name="colorPrimaryDark">@color/primary_dark</item> 
+        <item name="colorControlHighlight">@color/accent_translucent</item> 
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:backgroundDimAmount">@color/BG</item>
+    </style>
+
+    <style name="Theme.AppTheme.Light.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar" />
+
+
+    <color name="primary">#236621</color>
+    <color name="primary_dark">#0b6912</color>
+    <color name="accent">#519c5b</color>
+    <color name="accent_translucent">#47bebebe</color>
+    <color name="accent_bright">#91b992</color>
+    <color name="BG">#47bebebe</color>
+
+</resources>

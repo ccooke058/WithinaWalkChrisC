@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never"/>
+    <item
+        android:id="@id/action_settings" android:title="Delete History"
+        android:orderInCategory="100" app:showAsAction="never"/>
+
+    <item android:id="@+id/action_place_picker"
+        android:title="Google Maps App"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_dialog_map"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_guess_current_place"
+        android:title="Current Location"
+        android:orderInCategory="200"
+        android:icon="@android:drawable/ic_menu_mylocation"
+        app:showAsAction="always" />
+
+</menu>
+
+
+
